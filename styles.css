@@ -1,0 +1,245 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+
+body{
+    background: rgb(121,88,9);
+    background: linear-gradient(90deg, rgba(121,88,9,1) 39%, rgba(255,140,0,1) 100%);
+}
+
+#barraDeNavegacion{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100px;
+    background: url(img/lince_header.jpg);
+    display: flex;
+}
+
+#cajaArticulos{
+    background-color: rgb(134, 117, 91);
+}
+
+#linkactivo{
+    color: #fff;
+    background-color: rgb(121,88,9);
+    padding: 4px ;
+    margin: 8px;
+}
+#formulario{
+    margin:2%;
+    padding: 2%;
+    align-items: center;
+
+}
+
+
+#tituloContacto{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+
+#alignThisTitle{
+    text-align:center;
+    font-size: 60px;
+}
+
+
+#footerGrap{
+    display: grid;
+    height: 30px;
+    grid-template-columns: 100%;     
+    grid-template-rows: 40%;
+    font-family: verdana, arial, helvetica;
+    column-gap: 30px;
+}
+
+#articulo{
+    padding: 50px;
+    background-color: rgb(201, 193, 50);
+    height: 400px;
+    width: 400px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    transition: width 250ms, height 100ms;
+
+}
+
+#articulo:hover{
+    width: 425px;
+    height:425px;
+}
+
+#inputComment{
+    width:200px;
+    height:100px;
+    transition: all 250ms;
+}
+
+#inputComment:focus{
+    width:400px;
+    transition: width 2s;
+    background-color: rgb(red, green, blue)
+}
+
+#inputData{
+    width:100px;
+    height:30px;
+    transition: all 250ms;
+}
+#inputData:focus{
+    width:150px;
+    transition: width 2s;
+    background-color: rgb(192, 189, 183)
+}
+
+
+#inputMensaje{
+    width:200px;
+    height:100px;
+    transition: all 3s;
+
+}
+
+#inputMensaje:focus{
+    width:300px;
+    transition: width 2s;
+    background-color: rgb(192, 189, 183)
+}
+
+.classProtegerLince{
+    font-size: 20px;
+    font-family: 'Oxygen', sans-serif;
+    flex-shrink: initial;
+    display: flex;
+    justify-content: center;
+
+    
+}
+.classProtegerLince img {
+    width: 400px;
+    height: 400px;
+  }
+
+
+#articuloVideo{
+
+    background: rgb(134,180,58);
+    background: linear-gradient(90deg, rgba(134,180,58,1) 0%, rgba(230,253,29,1) 50%, rgba(252,176,69,1) 100%);
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: unset;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    
+
+}
+
+li{
+    display:inline-block;
+    width: 18%;
+    color:white;
+    text-align: center;
+    padding-top: 50px;
+    font-size:20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#tiposDeLinces{
+    font-family: 'Odibee Sans', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    color:rgb(0, 0, 0);
+    display: grid;
+    margin: 2px;
+    padding: 2px;
+    grid-template-columns: 50%;
+    grid-column-gap:10px;
+    grid-row-gap: 15px;
+    grid-template-areas: "articulo"
+                         "articulo"
+                         "articulo"
+
+}
+
+#grillaDeProductos{
+    display:grid;
+    height:1000px;
+    grid-column-gap: 10px;
+    grid-row-gap:30px;
+    grid-template-columns: 10% 10% 10% 10% 10%;
+    grid-template-rows: 5% 5% 5%;
+    grid-template-areas: "descripcio descripcion descripcion descripcion"
+                         "fila1  fila1 fila1 fila1 fila1"
+                         "fila2  fila2 fila2 fila2 fila3"
+
+}
+
+#titulosDeDescripcion{
+    grid-area: descripcion descripcion descripcion descripcion;
+    width:600px;
+    height:100px;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+    grid-column-gap: 20px;
+
+}
+
+
+
+#fila1{
+   grid-area: fila1  fila1 fila1 fila1 fila1;
+   width:600px;
+   height:100px;
+   font-family: arial, sans-serif;
+   border-collapse: collapse;
+   width: 100%;
+   text-align: center;
+   padding: 8px;
+}
+
+
+#fila2{
+   grid-area: fila2  fila2 fila2 fila2 fila2;
+   width:600px;
+   height:100px;
+   font-family: arial, sans-serif;
+   border-collapse: collapse;
+   width: 100%;
+   text-align: center;
+   padding: 8px;
+}
+
+
+
+
+
+
+#productos{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #030101;
+    text-align: left;
+    padding: 8px;
+
+}
+
+
+#ulProducto{ 
+    font-family: 'Odibee Sans', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+}
